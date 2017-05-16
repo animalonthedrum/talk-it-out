@@ -1,3 +1,8 @@
 # Talk It Out
 
-*See Prime assignment app for instructions. Then, update me!*
+## Talk-it-out
+Purpose of assignment was to practice using built-ins for numbers, strings and arrays.
+
+## Authors
+- Lindsey Olson
+- Brett Miller

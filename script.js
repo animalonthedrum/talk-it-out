@@ -29,9 +29,70 @@ is more than one character in the string. Return `val` and set `majorKey` to the
 
 12. Call the function.
 
-13. Console log `majorKey`. 
+13. Console log `majorKey`.
 
 14. Create an index.html file, link in this JavaScript file. Load in the browser and check the value from Step 13.
 
 15. Your answer should be a string value that equals 7. Is that what you got?
 */
+
+var majorKey = 42;
+
+if (majorKey >= 53){
+  majorKey += 42;
+  console.log(majorKey);
+}
+else {
+  majorKey -=13;
+  console.log(majorKey);
+}
+
+majorKey+="11";
+
+var keyChars = [];
+
+for (var i=0; i <= majorKey.length-1; i++) {
+  var currentChar = majorKey.charAt(i);
+  keyChars.push (currentChar);
+}
+
+var last = keyChars.pop();
+var first = keyChars.shift();
+
+var backwards = [];
+
+for (var j= keyChars.length-1; j>=0; j--) {
+  backwards += keyChars[j];
+}
+
+majorKey = parseInt(majorKey);
+backwards = parseInt(backwards);
+
+majorKey += backwards;
+
+if(majorKey<60) {
+  majorKey = 14;
+}
+else if
+  (majorKey === 2930) {
+    majorKey = 27;
+  }
+else {
+  majorKey = 2;
+}
+var k = 10;
+while (k>=1) {
+majorKey++;
+  k--;
+}
+
+function convert(val){
+  val = val.toString();
+  if(val.length>1){
+    val = val.substring(1, val.length);
+}
+return val;
+}
+majorKey = convert(majorKey);
+
+console.log(majorKey);
